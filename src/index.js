@@ -4,6 +4,8 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Navbar from './components/home/Navbar';
 import Router from './components/router/Router';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min'
 
 ReactDOM.render(
   <React.StrictMode>
