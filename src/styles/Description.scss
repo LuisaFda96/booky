@@ -1,0 +1,29 @@
+.description {
+  margin-top: 90px;
+}
+
+.button {
+  background-color: #0ce682;
+  border: 1px solid #0ce682
+}
+
+.boton {
+  background-color: #0ce682;
+  border: 1px solid #0ce682
+}
+
+.boton:active{
+  background-color: rgb(27, 181, 228);
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (min-width:990px){
+  .contenedor{
+    flex-direction: row;
+  }
+}
