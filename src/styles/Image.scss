@@ -1,5 +1,50 @@
 .image {
-  width: 15rem;
-  height: 20rem ;
+  height: 50vh ;
 }
+
+.fondo_imagen{
+  background-color: #f4f4f4;
+}
+
+.floating-icon {
+  position: absolute;
+  left: 30px;
+  top: 100px;
+  background-color:#00bfc5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-icon:hover {
+  cursor: pointer;
+}
+
+.floating-icon span {
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: white;
+}
+
+
+@media only screen and (min-width: 700px){
+  .image {
+    height: 85vh ;
+  }
+} 
+
+@media only screen and (min-width: 1000px){
+  .image {
+    height: 75vh ;
+  }
+
+  .fondo_imagen{
+    margin: 20px;
+  }
+} 
+
+
 

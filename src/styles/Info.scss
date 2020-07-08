@@ -1,0 +1,11 @@
+.price {
+  color:#0ce682;
+  font-size: 2rem;
+  border-bottom: solid 0.625em #f0f0f0;
+}
+
+@media only screen and (min-width: 1000px){
+  .info{
+    height: 60vh;
+  }
+} 
