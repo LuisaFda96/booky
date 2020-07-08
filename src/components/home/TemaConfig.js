@@ -5,7 +5,7 @@ import blueGrey from  '@material-ui/core/colors/blueGrey'
 const theme = createMuiTheme({
     palette:{
         primary:{
-            main: blueGrey[50]
+            main: blueGrey[500]
         }
     }
 })

@@ -1,5 +1,13 @@
-import React from "react";
+import React from 'react'
 import "../../styles/Navbar.scss";
+import { Toolbar, Typography, AppBar, makeStyles, IconButton } from '@material-ui/core'
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
+import InputBase from '@material-ui/core/InputBase';
+import { fade } from '@material-ui/core/styles';
+import SearchIcon from '@material-ui/icons/Search';
+// import '../../styles/slider.scss';
+
+
 
 const Navbar = () => {
   return (

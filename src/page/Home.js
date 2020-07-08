@@ -1,8 +1,25 @@
 import React from 'react';
-import { Button, ThemeProvider, Typography } from '@material-ui/core'
-import theme from '../components/home/TemaConfig'
-import Slider from '../components/home/Slider'
+import { Button, ThemeProvider, Typography, IconButton } from '@material-ui/core'
+import theme from '../components/home/TemaConfig';
+import Slider from '../components/home/Slider';
+import '../styles/footer.css'
+import { red, blue, lightBlue, pink } from '@material-ui/core/colors'
 import Container from '@material-ui/core/Container';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import PinterestIcon from '@material-ui/icons/Pinterest';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import book from '../components/img/book.png';
+import gift from '../components/img/gift.png';
+import delivery from '../components/img/delivery.png';
+import shoppingCart from '../components/img/shoppingCart.png';
+import iconBook from '../components/img/iconBook.png';
+import refresh from '../components/img/refresh.png';
+import Books from '../components/home/Books';
+import ButtonBase from '@material-ui/core/ButtonBase';
+
+
 
 
 function Home() {
@@ -10,41 +27,86 @@ function Home() {
   return (
 
     <ThemeProvider theme={theme}>
-     <Container>
+      <Container>
 
         <div className="Home">
-        <Slider />
-      </div>
+          <Slider />
+        </div>
 
-      <div>
-        <h4> Where does it come from?</h4>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-     </p>
-      </div>
-      <div>
-        <h4> Where does it come from?</h4>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-     </p>
-      </div>
-      <div>
-        <h4> Where does it come from?</h4>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-     </p>
-      </div>
-      <div>
-        <h4> Where does it come from?</h4>
-        <p>
-          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32
-     </p>
-      </div>
+        <div>
+          <Books />
+        </div>
+
+
+        <div className="section">
+          <h1>Nuestros servicios</h1>
+          <p>
+            Compartimos miles de libros con otros al revisarlos. Nuestro objetivo es poner los libros en manos de los lectores de todo el mundo. Disfrute de la posible experiencia de compra de libros con nuestra confiable librería.
+          </p>
+          <span >
+            <img src={gift} className="icons" />
+
+          </span>
+          <span>
+            <img src={delivery} className="icons" />
+          </span>
+
+          <span>
+            <img src={shoppingCart} className="icons" />
+          </span>
+          <span>
+            <img src={iconBook} className="icons" />
+          </span>
+
+
+
+          <img src={refresh} className="icons" />
+        </div>
+
       </Container>
+      <div>
+        <footer className="footer is-primary">
+          <div className="container">
+            <div className="columns">
+              <div className="column">
+                <img src={book} className="image" />
+                <p>Tienda de libros booky</p>
+              </div>
+              <div>
+
+                <IconButton>
+                  <PinterestIcon style={{ color: red[700] }} />
+                </IconButton>
+
+                <IconButton>
+                  <TwitterIcon style={{ color: lightBlue[500] }} />
+                </IconButton>
+
+                <IconButton>
+                  <InstagramIcon style={{ color: pink[500] }} />
+                </IconButton>
+                <IconButton>
+                  <FacebookIcon style={{ color: blue[500] }} />
+                </IconButton>
+
+                <IconButton>
+                  <YouTubeIcon style={{ color: red[900] }} />
+                </IconButton>
+
+                <p>&copy; 2020 Proyecto hecho en React <p class="fab fa-react" style={{ color: lightBlue[500] }} /> para el bootcamp de Pioneras&amp;Globant.</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </ThemeProvider>
 
   );
 }
 export default Home;
-  
+
+
+
+
+
 

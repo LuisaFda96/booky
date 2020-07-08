@@ -1,7 +1,7 @@
 import React, {useState}from 'react'
 import  '../../styles/slider.scss'
 import ImgComp from './ImgComp'
-import i1 from '../img/img1.jpg'
+// import i1 from '../img/img1.jpg'
 import i2 from '../img/img2.jpg'
 import i3 from '../img/img3.jpg'
 import i4 from '../img/img4.jpg'
@@ -9,7 +9,7 @@ import i4 from '../img/img4.jpg'
 function Slider(){
     const [x, setX] = useState(0);
     let sliderArr =[
-    <ImgComp src={i1}/>,
+    // <ImgComp src={i1}/>,
     <ImgComp src={i2}/>,
     <ImgComp src={i3}/>,
     <ImgComp src={i4}/>,
