@@ -4,14 +4,15 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import Navbar from './components/home/Navbar';
 import Router from './components/router/Router';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min'
+import Footer from './components/home/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar/>
-    
     <Router/>
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );

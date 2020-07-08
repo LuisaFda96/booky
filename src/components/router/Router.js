@@ -5,7 +5,7 @@ import Home from '../../page/Home';
 const Router = () => (
 
     <BrowserRouter>
-        <Switch >
+        <Switch>
             <Route exact path="/" component={ Home }/>
         </Switch>
     </BrowserRouter>

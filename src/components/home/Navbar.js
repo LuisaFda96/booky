@@ -1,35 +1,33 @@
 import React from 'react'
 import "../../styles/Navbar.scss";
-import { Toolbar, Typography, AppBar, makeStyles, IconButton } from '@material-ui/core'
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
-import InputBase from '@material-ui/core/InputBase';
-import { fade } from '@material-ui/core/styles';
-import SearchIcon from '@material-ui/icons/Search';
 // import '../../styles/slider.scss';
 
 
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark navbar ">
 
-      <a className="navbar-brand text-light" href="#">
-        Booky
+    <nav className="navbar navbar-expand-lg navbar-dark navbar">
+      <div className="containerNav d-flex justify-content-between align-items-center">
+        <a className="navbar-brand text-light" href="#">
+          Booky
       </a>
-      <button    
-         className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"ton 
-      >
-        <span className="navbar-toggler-icon "></span>
-      </button>  
-      <div 
-      className="collapse navbar-collapse " id="navbarSupportedContent">
-    {/* className='nav'> */}
+        <button
+          className="navbar-toggler vh-75"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+
+          <span className="navbar-toggler-icon "></span>
+        </button>
+      </div>
+      <div
+        className="collapse navbar-collapse " id="navbarSupportedContent">
+        {/* className='nav'> */}
         <ul className="navbar-nav mr-auto ">
           <li className="nav-item dropdown">
             <a
@@ -116,7 +114,7 @@ const Navbar = () => {
           />
           <button
             className="btn btn-outline-success my-2 my-sm-0 text-light "
-            id="buton"
+            id="button"
             type="submit"
           >
             Search
