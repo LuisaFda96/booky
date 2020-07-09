@@ -6,7 +6,7 @@ import Shop from '../../components/shop/Shop';
 
 const Router = () => (
     <BrowserRouter>
-        <Switch >
+        <Switch>
             <Route exact path="/" component={ Home }/>
             <Route exact path="/Description" component={ Description}/>
             <Route exact path="/Shop" component={ Shop }/>

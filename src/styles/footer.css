@@ -1,6 +1,6 @@
 footer{
     background-color: #041620;
-    height: 340px;
+    height: 320px;
     color: #fff;
     text-align: center;
 }
@@ -10,7 +10,7 @@ footer{
     height: 150px;
 }
 
-
+/* //////////////////////////otro componente/////////////////////////// */
 .imgBooks{
     width: 400px;
     height: 550px;
@@ -24,3 +24,4 @@ footer{
 .section{
     text-align: center;
 }
+/* ///////// */
