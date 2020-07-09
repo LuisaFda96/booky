@@ -18,15 +18,28 @@ import iconBook from '../components/img/iconBook.png';
 import refresh from '../components/img/refresh.png';
 import Books from '../components/home/Books';
 import ButtonBase from '@material-ui/core/ButtonBase';
+import axios from 'axios'
 
 
 
 
 function Home() {
 
+    const getUrl = "https://api.jsonbin.io/b/5f05ec24a62f9b4b276138c8";
+    const token = "$2b$10$oZBLJEh/jk0pvfQ21bcGne3Hs2JmsQJAuBRuLMLJEIBDk5arYasJC";
+  var axiosHeader = {
+    header: { "secret-key": token }
+  }
+  const books = (e) => {
+    e.preventDefault()
+    axios.get(getUrl, axiosHeader)
+      .then((rest) => { console.log(rest) });
+  }
+
   return (
 
     <ThemeProvider theme={theme}>
+      <button onClick={books}></button>
       <Container>
 
         <div className="Home">
