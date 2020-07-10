@@ -1,15 +1,26 @@
 import React from 'react';
-// import { render } from 'node-sass';
 import  '../../styles/shop.scss';
-import dele from '../img/delete-icon.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Table from '../shop/shop-table';
+import Total from '../shop/shop-total';
 
 function Shop(){
-    return(<Table
-    precio="20000" 
-    name="Cien años de soledad">
-    </Table>);
+    return(
+        <React.Fragment>
+            {/* <div className="description-shop">
+                <h2>Your Cart</h2>
+            </div> */}
+
+            <Table
+            precio="20000"
+            name="Cien años de soledad">
+            </Table>
+
+            <div>
+                <Total/>
+            </div>
+
+        </React.Fragment>
+    );
 }
 
 export default Shop;
