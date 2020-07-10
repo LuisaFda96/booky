@@ -22,17 +22,20 @@ function Home() {
   return (
     // <ThemeProvider theme={theme}>
     //   <Container>
-    
-     <div className="container pt-3">
-       <Slider/>
-          <Books/>
-          <Section1/>
-          <p>{books}</p>
-          <Section />
-     </div>
 
-          
-        
+    <React.Fragment>
+      <Slider />
+      <div className="container pt-3">
+        <Books />
+      </div>
+
+      <Section1 />
+      <div className="container pt-3">
+        <Section />
+      </div>
+    </React.Fragment>
+
+
 
     //   </Container>
     // </ThemeProvider>
