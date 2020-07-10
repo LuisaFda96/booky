@@ -1,0 +1,27 @@
+footer{
+    background-color: #041620;
+    height: 320px;
+    color: #fff;
+    text-align: center;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+}
+
+/* //////////////////////////otro componente/////////////////////////// */
+.imgBooks{
+    width: 400px;
+    height: 550px;
+    
+    /* &:hover {
+        background: rgba(241, 238, 6,0.156);
+        cursor:pointer;
+
+    } */
+}
+.section{
+    text-align: center;
+}
+/* ///////// */
