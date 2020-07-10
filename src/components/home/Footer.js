@@ -1,6 +1,7 @@
 import React from 'react';
 import book from '../../components/img/book.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../../styles/footer.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faYoutube, faInstagram,  faFacebookSquare, faPinterestSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
