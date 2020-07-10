@@ -1,5 +1,6 @@
 import React from 'react';
 import  '../../styles/shop-total.scss';
+import { Link } from 'react-router-dom';
 
 function Total(){
     return(
@@ -17,8 +18,9 @@ function Total(){
                     </tr>
                 </tbody>
             </table>
-
-            <button className="shop-button">Realizar Pago</button>
+            <Link to = "/Checkout">
+                <button className="shop-button">Realizar Pago</button>
+            </Link>
         </div>
     );
 }

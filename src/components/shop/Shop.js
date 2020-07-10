@@ -6,9 +6,9 @@ import Total from '../shop/shop-total';
 function Shop(){
     return(
         <React.Fragment>
-            {/* <div className="description-shop">
-                <h2>Your Cart</h2>
-            </div> */}
+            <div className="description-shop">
+                <h2>Su carrito</h2>
+            </div>
 
             <Table
             precio="20000"
