@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../styles/Navbar.scss";
+// import logo from '../../components/img/logo.png';
 
 
 // import '../../styles/slider.scss';
@@ -13,6 +14,7 @@ const Navbar = () => {
         <a className="navbar-brand text-light" href="#">
           Booky
       </a>
+      {/* <image src={logo}/> */}
         <button
           className="navbar-toggler"
           type="button"
@@ -106,7 +108,7 @@ const Navbar = () => {
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input
-              className="form-control mr-sm-2 "
+              className="form-control btn-outline-secondary mr-sm-2 "
               type="search"
               placeholder="Search"
               aria-label="Search"
