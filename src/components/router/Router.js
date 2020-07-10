@@ -7,7 +7,7 @@ import Checkout from '../../components/shop/Checkout';
 
 const Router = () => (
     <BrowserRouter>
-        <Switch >
+        <Switch>
             <Route exact path="/" component={ Home }/>
             <Route exact path="/Description" component={ Description}/>
             <Route exact path="/Shop" component={ Shop }/>

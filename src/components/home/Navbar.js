@@ -1,10 +1,7 @@
 import React from 'react'
 import "../../styles/Navbar.scss";
-import { Toolbar, Typography, AppBar, makeStyles, IconButton } from '@material-ui/core'
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'
-import InputBase from '@material-ui/core/InputBase';
-import { fade } from '@material-ui/core/styles';
-import SearchIcon from '@material-ui/icons/Search';
+
+
 // import '../../styles/slider.scss';
 
 
@@ -12,7 +9,6 @@ import SearchIcon from '@material-ui/icons/Search';
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar ">
-
       <a className="navbar-brand text-light" href="#">
         Booky
       </a>
@@ -23,7 +19,7 @@ const Navbar = () => {
         data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
-        aria-label="Toggle navigation"ton 
+        aria-label="Toggle navigation"
       >
         <span className="navbar-toggler-icon "></span>
       </button>  
