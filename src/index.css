@@ -38,3 +38,16 @@ code {
     margin: 2em;
     text-align: center;
 }
+.checkout-title {
+    padding: 20vh;
+    text-align: center;
+    font-size: 3em !important;
+    color: white;
+    font-weight: 700;
+    background-image: url('./components/img/[loremipsum.themerex.net][1]1-1.jpg');
+    width: 100;
+}
+.checkout-subtitle {
+    text-align: center;
+    margin-bottom: 10vh;
+}
