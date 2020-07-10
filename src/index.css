@@ -13,6 +13,27 @@ code {
 }
 
 .form-control {
-    border: 1px solid red !important;
-    border-radius: 0;
+    border-radius: 0px !important;
+}
+
+.form-control:focus {
+    border: 1px solid #0CE682 !important;
+    border-radius: 0px;
+}
+
+.form-div {
+    margin: 2em auto;
+    width: 40%;
+}
+.form-names {
+    display: flex;
+    gap: 10px;
+}
+
+.col {
+    width: 100%;
+}
+.paypal-button {
+    margin: 2em;
+    text-align: center;
 }
