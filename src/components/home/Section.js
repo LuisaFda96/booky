@@ -44,7 +44,7 @@ const Section = () => {
             <p className="card-text">COMPRA DE LIBROS USADOS</p>
         </div>
 
-        <div className="cardSection">          
+        <div className="cardSection">        
             <img src={refresh} className="icons" />
             <p className="card-text">DEVOLUCIONES / CAMBIOS</p>
         </div>

@@ -18,9 +18,9 @@ const Books = () => {
         <div className="card cardBook">
           <FontAwesomeIcon icon={faShoppingCart} className="cartShopping" transform="shrink-6 left-4" size="3x" color="#fff" />
           {/* <div className="card-body"> */}
-          {/* <img src={leviatan}  /> */}
-          {/* <h6 className="card-title">Leviatan</h6>
-            <p className="card-text"><small class="text-muted">Thomas Hobbes</small></p> */}
+          <img src={leviatan}  />
+          <h6 className="card-title">Leviatan</h6>
+            <p className="card-text"><small class="text-muted">Thomas Hobbes</small></p>
           {/* </div> */}
         </div>
       
