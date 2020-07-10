@@ -2,9 +2,9 @@ import React, {useState}from 'react'
 import  '../../styles/slider.scss'
 import ImgComp from './ImgComp'
 // import i1 from '../img/img1.jpg'
-import i2 from '../img/img2.jpg'
-import i3 from '../img/img3.jpg'
-import i4 from '../img/img4.jpg'
+import i2 from '../img/slide2.PNG'
+import i3 from '../img/booky.PNG'
+import i4 from '../img/slide3.png'
 
 function Slider(){
     const [x, setX] = useState(0);
@@ -22,17 +22,17 @@ function Slider(){
     };
 
     return(
-        <div className="slider">
+        <div className="slider  ">
             {sliderArr.map((item, index)=>{
             return(
             <div key={index} className="slide" style={{transform:`translateX(${x}%)`}}>{item}</div>
             )
         })}
         <button id="goLeft" onClick={goLeft}>
-            <i class="fas fa-chevron-left"></i>
+            <i className="fas fa-chevron-left"></i>
         </button>
         <button id="goRight" onClick={goRight}>
-        <i class="fas fa-chevron-right"></i>
+        <i className="fas fa-chevron-right"></i>
         </button>
         </div>
     )
