@@ -23,7 +23,7 @@ function Home() {
     // <ThemeProvider theme={theme}>
     //   <Container>
     
-     <div className="container">
+     <div className="container pt-3">
        <Slider/>
           <Books/>
           <Section1/>
