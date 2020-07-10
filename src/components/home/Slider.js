@@ -4,7 +4,7 @@ import ImgComp from './ImgComp'
 // import i1 from '../img/img1.jpg'
 import i2 from '../img/slide2.PNG'
 import i3 from '../img/booky.PNG'
-import i4 from '../img/slide3.PNG'
+import i4 from '../img/slide3.png'
 
 function Slider(){
     const [x, setX] = useState(0);
