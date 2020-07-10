@@ -7,7 +7,8 @@ function Image({ src }){
     		<div className='floating-icon'>
 						<span>sale</span>
 					</div>
-    <img src={src} alt="slide-img" className='image col-12 col-md-9 col-lg-12 p-0'></img>
+    <img src={src} alt="slide-img" className='imagen col-12 col-md-9 col-lg-12 p-0'
+   ></img>
     </div>
   )
 }

@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-import i1 from "../img/img1.jpg";
 import Image from "./Image";
 import Info from "./Info";
-import Options from "./Options";
 import "../../styles/Description.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown, faSortUp } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Description = (props) => {
-  const state = props.location.state[0];
+const Description = (book) => {
+  const state = book.location.state[0].data
   console.log(state);
   const [count, setCount] = useState(1);
 
@@ -33,7 +31,7 @@ const Description = (props) => {
           description={state.description}
           title={state.title}
         ></Info>
-        <section className="d-flex ml-4 ">
+        <section className="d-flex ml-4   ">
           <div className="d-flex">
             <p className="col-4 mr-3 align-self-center">{count}</p>
             <div className="d-flex flex-column">
@@ -42,7 +40,7 @@ const Description = (props) => {
                 className="col-6 boton border-bottom d-flex justify-content-center align-items-center "
               >
                 <FontAwesomeIcon icon={faSortUp} className="text-light">
-                  {" "}
+             
                 </FontAwesomeIcon>
               </button>
               <button
@@ -50,7 +48,6 @@ const Description = (props) => {
                 className="col-6 boton d-flex justify-content-center align-items-center "
               >
                 <FontAwesomeIcon icon={faCaretDown} className="text-light">
-                  {" "}
                 </FontAwesomeIcon>
               </button>
             </div>

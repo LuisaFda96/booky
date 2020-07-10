@@ -1,9 +1,11 @@
 .title{
         text-align: center;
+        font-weight: 900;
+        font-family: "Lato", sans-serif;
        color: #041620 ; 
     }
 
-.card{
+.cardBook{
     width: 380px;
     height: 430px;
     position: relative;  
@@ -45,4 +47,26 @@
       transform: scale(1);
       opacity: 1;
   }
+}
+.page-item{
+  text-transform: uppercase;
+  // text-align: center;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px 4px;
+  font: 400 12px/22px 'Montserrat',sans-serif !important;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  // position: relative;
+  cursor: pointer;
+ 
+}
+.pagination{
+  justify-content: center;
+
 }

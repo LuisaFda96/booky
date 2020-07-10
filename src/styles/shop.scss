@@ -1,0 +1,15 @@
+.description-shop{
+    // background-image: url('http://loremipsum.themerex.net/wp-content/uploads/2016/06/image-3.jpg');
+    background-image: 
+    linear-gradient(
+      rgba(15, 7, 63, 0.5),
+      rgba(15, 6, 65, 0.5)
+    ),
+    url('http://loremipsum.themerex.net/wp-content/uploads/2016/06/image-3.jpg');
+height: 50px;
+width: 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
