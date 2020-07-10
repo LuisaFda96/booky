@@ -1,8 +1,66 @@
-.parr {
-    margin-top: 100px;
+.shop-buy {
+    border: 1px solid #f4f7f9;
+    font-family: "Lato", sans-serif;
+    margin: 100px 50px 50px 50px;
+    min-width: 600px;
 }
 
-.table-shop{
-    border: 1px solid black;
+.shop-titles, .shop-items {
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
 }
 
+.button-delete{
+    border: none;
+    background-color: transparent;
+    color: #0ce682
+}
+
+.shop-titles span, .shop-items span {
+    align-items: center;
+    border: 1px solid #f4f7f9;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+//Estilo del botón de cantidad
+.shop-count{
+    background-color: #e4e9ec;
+    border: 1px solid #F4F7F9;
+    height: 45px;
+}
+
+.shop-count .shop-count-button{
+    background-color: #0ce682;
+    border: #0ce682;
+    color: white;
+    height: 5px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 720px)  {
+
+    .shop-buy {
+        display: flex;
+        min-width: 200px;
+    }
+
+    .shop-titles{
+        background-color: transparent;
+    }
+
+    .shop-titles, .shop-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shop-titles span, .shop-items span{
+        min-height: 50px;
+    }
+
+}
