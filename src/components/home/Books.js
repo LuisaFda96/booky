@@ -6,26 +6,36 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 import "../../styles/books.scss";
+import { Link } from 'react-router-dom';
 
-const Books = () => {
-
+const Books = ({title, image, description,price }) => {
+// console.log()
 
   return (
     <div>
-      <h1 className="title">Books Bestsellers</h1>
+      <h1 className="title">{title}</h1>
       <div className="card-group">
-
         <div className="card">
-          <FontAwesomeIcon icon={faShoppingCart} className="cartShopping" transform="shrink-6 left-4" size="3x" color="#fff" />
+          <Link
+          to={{
+						pathname: '/Description',
+            state: [{
+              description: description,
+              price: price,
+              image: image,
+              title: title,
+           }]
+					}}>
+          <FontAwesomeIcon icon={faShoppingCart} 
+          className="cartShopping" transform="shrink-6 left-4" size="3x" color="#fff" /> </Link>
           {/* <div className="card-body"> */}
-            <img src={leviatan} className="imgB" />
+            <img src={image} className="imgB" />
             {/* <h6 className="card-title">Leviatan</h6>
             <p className="card-text"><small class="text-muted">Thomas Hobbes</small></p> */}
-          {/* </div> */}
+          {/* </div> */}         
         </div>
 
-
-        <div className="card">
+        {/* <div className="card">
           <img src={loboEstepario} className="imgB" />
           <FontAwesomeIcon icon={faShoppingCart} className="cartShopping" transform="shrink-6 left-4" size="3x" color="#fff" />
 
@@ -35,8 +45,7 @@ const Books = () => {
           <img src={miLucha} className="imgB" />
           <FontAwesomeIcon icon={faShoppingCart} className="cartShopping" transform="shrink-6 left-4" size="3x" color="#fff" />
 
-        </div>
-
+        </div> */}
       </div>
     </div>
   );
