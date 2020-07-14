@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import theme from '../components/home/TemaConfig';
 import Slider from "../components/home/Slider";
-// import '../styles/footer.scss'
-// import Container from '@material-ui/core/Container';
 import Books from "../components/home/Books";
 import Section from "../components/home/Section";
 import axios from "axios";
@@ -24,7 +21,6 @@ function Home() {
     };
     axios.get(getUrl, axiosHeader).then((res) => {
       const data = res.data.books;
-      // console.log(data)
       if (data !== null) {
         setListBooks(
           data.map((item) => ({
@@ -37,33 +33,27 @@ function Home() {
             categories: item.categories,
           }))
         );
-        // console.log(ListBooks);
       } else {
         console.log("");
       }
     });
   });
 
-  const b = ListBooks.filter((item,index)=>
-    index<=2
-  );
+  const b = ListBooks.filter((item, index) => index <= 2);
 
   return (
-    <div className="container pt-3">
+    <React.Fragment>
       <Slider />
-      <div>
-        {/* {b.map((book) => {
-          return ( */}
-            <Books
-            data = {b}
-              >             
-            </Books>
-            <Section1 />
-          {/* );
-        })} */}
+      <div className="container pt-3">
+        <div>
+          <Books data={b}></Books>
+        </div>
       </div>
-      <Section />
-    </div>
+      <Section1 />
+      <div className="container pt-3">
+        <Section />
+      </div>
+    </React.Fragment>
   );
 }
 export default Home;
