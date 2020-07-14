@@ -5,21 +5,18 @@ import Total from '../shop/shop-total';
 
 function Shop(){
     return(
-        <React.Fragment>
+        <div className=''>
             <div className="description-shop">
                 <h2>Su carrito</h2>
             </div>
-
             <Table
-            precio="20000"
-            name="Cien años de soledad">
+            precio="10.40"
+            name="Garden Design and Landscaping">
             </Table>
-
             <div>
                 <Total/>
             </div>
-
-        </React.Fragment>
+        </div>
     );
 }
 

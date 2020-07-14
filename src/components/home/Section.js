@@ -21,7 +21,7 @@ const Section = () => {
         Compartimos miles de libros con otros al revisarlos. Nuestro objetivo es poner los libros en manos de los lectores de todo el mundo. Disfrute de la posible experiencia de compra de libros con nuestra confiable librería.
           </p>
 
-      <div className="card-deck d-flex justify-content-center flex-wrap">
+      <div className="card-deck">
 
         <div className="cardSection ">
             <img src={gift} className="icons" />
@@ -53,5 +53,4 @@ const Section = () => {
     </div>
   );
 }
-
 export default Section;

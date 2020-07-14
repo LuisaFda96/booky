@@ -1,50 +1,59 @@
-import React from 'react';
-// import theme from '../components/home/TemaConfig';
-import Slider from '../components/home/Slider';
-// import '../styles/footer.scss'
-// import Container from '@material-ui/core/Container';
-import Books from '../components/home/Books';
-import Section from '../components/home/Section';
-import axios from 'axios';
-import Section1 from '../components/home/Section1';
+import React, { useState, useEffect } from "react";
+import Slider from "../components/home/Slider";
+import Books from "../components/home/Books";
+import Section from "../components/home/Section";
+import axios from "axios";
+import Section1 from "../components/home/Section1";
 
 function Home() {
-  const getUrl = "https://api.jsonbin.io/b/5f05ec24a62f9b4b276138c8";
-  const token = "$2b$10$oZBLJEh/jk0pvfQ21bcGne3Hs2JmsQJAuBRuLMLJEIBDk5arYasJC";
-  let axiosHeader = {
-    header: { "secret-key": token }
-  }
-  const books = (e) => {
-    e.preventDefault()
-    axios.get(getUrl, axiosHeader)
-      .then((rest) => { console.log(rest) });
-  }
-  return (
-    // <ThemeProvider theme={theme}>
-    //   <Container>
+  const [ListBooks, setListBooks] = useState([
+    {
+      title: "",
+      price: "",
+    },
+  ]);
+  useEffect(() => {
+    const getUrl = "https://my-json-server.typicode.com/AdrianaMaguea/booki/db";
+    const token =
+      "$2b$10$oZBLJEh/jk0pvfQ21bcGne3Hs2JmsQJAuBRuLMLJEIBDk5arYasJC";
+    let axiosHeader = {
+      headers: { "secret-key": token },
+    };
+    axios.get(getUrl, axiosHeader).then((res) => {
+      const data = res.data.books;
+      if (data !== null) {
+        setListBooks(
+          data.map((item) => ({
+            title: item.title,
+            price: item.price,
+            image: item.image,
+            description: item.description,
+            price: item.price,
+            author: item.author,
+            categories: item.categories,
+          }))
+        );
+      } else {
+        console.log("");
+      }
+    });
+  });
 
+  const b = ListBooks.filter((item, index) => index <= 2);
+
+  return (
     <React.Fragment>
       <Slider />
       <div className="container pt-3">
-        <Books />
+        <div>
+          <Books data={b}></Books>
+        </div>
       </div>
-
       <Section1 />
       <div className="container pt-3">
         <Section />
       </div>
     </React.Fragment>
-
-
-
-    //   </Container>
-    // </ThemeProvider>
   );
 }
 export default Home;
-
-
-
-
-
-

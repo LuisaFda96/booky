@@ -1,4 +1,4 @@
-.image {
+.imagen {
   height: 50vh ;
 }
 
@@ -31,16 +31,12 @@
 
 
 @media only screen and (min-width: 700px){
-  .image {
+  .imagen {
     height: 85vh ;
   }
 } 
 
 @media only screen and (min-width: 1000px){
-  .image {
-    height: 75vh ;
-  }
-
   .fondo_imagen{
     margin: 20px;
   }

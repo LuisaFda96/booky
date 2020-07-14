@@ -1,6 +1,7 @@
 import React from 'react'
 import "../../styles/Navbar.scss";
 // import logo from '../../components/img/logo.png';
+import {Link} from 'react-router-dom'
 
 
 // import '../../styles/slider.scss';
@@ -11,7 +12,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark  ">
-        <a className="navbar-brand text-light" href="#">
+        <a className="navbar-brand text-light" href="#" to='/'>
           Booky
       </a>
       {/* <image src={logo}/> */}
