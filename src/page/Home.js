@@ -25,7 +25,6 @@ function Home() {
         setListBooks(
           data.map((item) => ({
             title: item.title,
-            price: item.price,
             image: item.image,
             description: item.description,
             price: item.price,

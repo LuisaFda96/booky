@@ -24,28 +24,28 @@ const Section = () => {
       <div className="card-deck">
 
         <div className="cardSection ">
-            <img src={gift} className="icons" />
+            <img src={gift} className="icons" alt="gift"/>
             <p className="card-text">PAPEL DE REGALO GRATIS</p>
         </div>
 
 
         <div className="cardSection">
-            <img src={delivery} className="icons" />
+            <img src={delivery} className="icons" alt="delivery"/>
             <p className="card-text">ENVIO</p>
         </div>
 
         <div className="cardSection">
-            <img src={shoppingCart} className="icons" />
+            <img src={shoppingCart} className="icons" alt="shopping cart"/>
             <p className="card-text">PEDIDOS EN LÍNEA</p>
         </div>
 
         <div className="cardSection">
-            <img src={iconBook} className="icons" />
+            <img src={iconBook} className="icons" alt="Book"/>
             <p className="card-text">COMPRA DE LIBROS USADOS</p>
         </div>
 
         <div className="cardSection">        
-            <img src={refresh} className="icons" />
+            <img src={refresh} className="icons" alt="refresh"/>
             <p className="card-text">DEVOLUCIONES / CAMBIOS</p>
         </div>
 
