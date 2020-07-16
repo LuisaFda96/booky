@@ -7,7 +7,7 @@ const Section1 = () => {
         <div className="popular ">
             <image src={clients}/>
             <h1 className="title-section1">Autores y series populares</h1>
-            <p>Somos una tienda en línea que vende libros, nuestra tienda tiene más de 500 mil libros y artículos digitales geniales. <br/>Somos
+            <p className="paragraph1">Somos una tienda en línea que vende libros, nuestra tienda tiene más de 500 mil libros y artículos digitales geniales. <br/>Somos
             un lugar perfecto para quienes buscan los mejores libros, audiolibros, libros de texto y videos.</p>
         </div>
     )
