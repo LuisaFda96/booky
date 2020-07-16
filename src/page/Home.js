@@ -37,7 +37,7 @@ function Home() {
         console.log("");
       }
     });
-  });
+  },[]);
 
   const b = ListBooks.filter((item, index) => index <= 2);
 
