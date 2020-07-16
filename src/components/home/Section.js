@@ -10,12 +10,8 @@ import refresh from '../img/refresh.png';
 const Section = () => {
   return (
     <div className="section">
-      <h1 >
-        <font style={{verticalAlign: "inherit"}}>
-          <font style={{verticalAlign: "inherit"}}>
+      <h1 className="title-services">
             Nuestros servicios
-          </font>
-        </font>
       </h1>
       <p>
         Compartimos miles de libros con otros al revisarlos. Nuestro objetivo es poner los libros en manos de los lectores de todo el mundo. Disfrute de la posible experiencia de compra de libros con nuestra confiable librería.
@@ -23,28 +19,28 @@ const Section = () => {
 
       <div className="card-deck">
 
-        <div className="cardSection ">
+        <div className="card-section">
             <img src={gift} className="icons" alt="gift"/>
             <p className="card-text">PAPEL DE REGALO GRATIS</p>
         </div>
 
 
-        <div className="cardSection">
+        <div className="card-section">
             <img src={delivery} className="icons" alt="delivery"/>
             <p className="card-text">ENVIO</p>
         </div>
 
-        <div className="cardSection">
+        <div className="card-section">
             <img src={shoppingCart} className="icons" alt="shopping cart"/>
             <p className="card-text">PEDIDOS EN LÍNEA</p>
         </div>
 
-        <div className="cardSection">
+        <div className="card-section">
             <img src={iconBook} className="icons" alt="Book"/>
             <p className="card-text">COMPRA DE LIBROS USADOS</p>
         </div>
 
-        <div className="cardSection">        
+        <div className="card-section">        
             <img src={refresh} className="icons" alt="refresh"/>
             <p className="card-text">DEVOLUCIONES / CAMBIOS</p>
         </div>

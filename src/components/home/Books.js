@@ -1,7 +1,4 @@
 import React from 'react';
-import leviatan from '../../components/img/leviatan.jpg';
-import loboEstepario from '../../components/img/loboEstepario.jpg';
-import miLucha from '../../components/img/miLucha.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 

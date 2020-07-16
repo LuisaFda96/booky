@@ -4,6 +4,7 @@ import Books from "../components/home/Books";
 import Section from "../components/home/Section";
 import axios from "axios";
 import Section1 from "../components/home/Section1";
+import Section2 from "../components/home/Section2";
 
 function Home() {
   const [ListBooks, setListBooks] = useState([
@@ -48,7 +49,8 @@ function Home() {
           <Books data={b}></Books>
         </div>
       </div>
-      <Section1 />
+      <Section1/>
+      <Section2/>
       <div className="container pt-3">
         <Section />
       </div>
