@@ -43,8 +43,8 @@ function Home() {
   return (
     <React.Fragment>
       <Slider />
-      <div className="container pt-3">
-        <div>
+      <div className="container pt-3 col-12 ">
+        <div className="col-12 ">
           <Books data={b}></Books>
         </div>
       </div>
