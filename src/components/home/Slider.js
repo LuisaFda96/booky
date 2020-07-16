@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import '../../styles/slider.scss'
 import ImgComp from './ImgComp'
 // import i1 from '../img/img1.jpg'
-import i2 from '../img/slide2.PNG'
-import i3 from '../img/booky.PNG'
-import i4 from '../img/slide3.png'
+import i2 from '../img/slide2.jpeg'
+import i3 from '../img/booky.jpeg'
+import i4 from '../img/slide3.jpeg'
 
 function Slider() {
     const [x, setX] = useState(0);
