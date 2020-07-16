@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Checkout() {
   return (
     <div>
-      <h1 className="checkout-title">Checkout</h1>
+      <h1 className="checkout-title col-12">Checkout</h1>
       <div className="form-div">
         <form>
           <h2 className="checkout-subtitle">Billing details</h2>

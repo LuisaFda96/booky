@@ -23,6 +23,9 @@ const Description = (book) => {
 
   const onclick = () => {};
   return (
+    <React.Fragment>
+       <h1 className="checkout-title col-12">Description</h1>
+  
     <div className="container-fluid mb-4 contenedor">
       <Image src={state.image}></Image>
       <div className="col-md-11 col-lg-6">
@@ -66,6 +69,7 @@ const Description = (book) => {
         </section>
       </div>
     </div>
+    </React.Fragment>
   );
 };
 

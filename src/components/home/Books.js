@@ -14,7 +14,7 @@ const Books = ({data}) => {
           return (
             <React.Fragment>            
         <div className="card cardBook col-12">
-        <span className="title p-0">{book.title}</span>
+        <span className="title p-0 text-dark">{book.title}</span>
           <Link
           to={{
 						pathname: '/Description',
