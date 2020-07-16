@@ -21,7 +21,7 @@ const Footer = () => {
                     <FontAwesomeIcon icon={faInstagram} transform="shrink-6 left-4" size="2x" color="#DB2F6A"/>
                     <FontAwesomeIcon icon={faPinterestSquare} transform="shrink-6 left-4" size="2x" color="#CB2027"/>
 
-                    <p>&copy; 2020 Proyecto hecho en React <FontAwesomeIcon icon={faReact} transform="shrink-4"  size="2x" color="#00A2F5"/> para el bootcamp de Pioneras&amp;Globant.</p>
+                    <p className="copyright">&copy; 2020 Proyecto hecho en React <FontAwesomeIcon icon={faReact} transform="shrink-1"  size="2x" color="#00A2F5"/> para el bootcamp de Pioneras&amp;Globant.</p>
  
                 </div>
             </footer>
