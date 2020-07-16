@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="columns">
                         <div className="column">
-                            <img src={logoB} className="image" />
+                            <img src={logoB} className="image" alt="logo" />
                             <p>Tienda de libros booky</p>
                         </div>
                     </div>

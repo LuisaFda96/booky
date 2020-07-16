@@ -23,9 +23,9 @@ const Description = (book) => {
 
   const onclick = () => {};
   return (
-    <div className="container-fluid mb-2  contenedor">
+    <div className="container-fluid mb-4 contenedor">
       <Image src={state.image}></Image>
-      <div className="col-md-11 col-lg-5">
+      <div className="col-md-11 col-lg-6">
         <Info
           price={state.price}
           description={state.description}
