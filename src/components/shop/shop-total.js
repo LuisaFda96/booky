@@ -2,7 +2,7 @@ import React from 'react';
 import  '../../styles/shop-total.scss';
 import { Link } from 'react-router-dom';
 
-function Total(){
+function Total({precio,count}){
     return(
         <div className="shop-total">
             <h2 className="shop-title-total">Total Compra</h2>
@@ -13,7 +13,7 @@ function Total(){
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Total:</td>
+                        <td>Total:{precio*count}</td>
                         <td></td>
                     </tr>
                 </tbody>

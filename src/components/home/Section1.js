@@ -4,11 +4,10 @@ import clients from '../img/clients.jpg';
 
 const Section1 = () => {
     return (
-        <div className="popular ">
+        <div className="popular">
             <image src={clients}/>
-            <h1 className="title-section1">Autores y series populares</h1>
-            <p>Somos una tienda en línea que vende libros, nuestra tienda tiene más de 500 mil libros y artículos digitales geniales. <br/>Somos
-            un lugar perfecto para quienes buscan los mejores libros, audiolibros, libros de texto y videos.</p>
+            <h1 className="title-section1">Popular authors and series</h1>
+            <p className="paragraph1">We are an online store that sells books, our store has more than 500 thousand great digital books and items.<br/>We are a perfect place for those looking for the best books, audiobooks, textbooks, and videos.</p>
         </div>
     )
 }

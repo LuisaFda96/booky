@@ -2,7 +2,6 @@
     font-weight: 900;
     font-family: "Lato", sans-serif;
     color:#041721; 
-    margin-left: 4em;
     padding-top: 60px;
     white-space: pre-line;
     // margin-top: ;
@@ -10,24 +9,29 @@
 .section-two{
     background-color: #EAEAEA;
     height: 600px;
+    flex-direction: column;
    
 }
 .paragraph{
-    margin-left: -41em;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .image-book{
-height: 300px;
-width: 300px;
-position: absolute;
-z-index: 3;
-margin-left: 50em;
-margin-top: -8em;
+// height: 300px;
+// width: 300px;
+// position: absolute;
+// z-index: 3;
+// margin-left: 50em;
+// margin-top: -8em;
 }
 .image-sale{
 height: 250px;
 width: 250px;
-margin-left: 15em;
-margin-top: 15px;
+
 }
+
+@media only screen and (min-width:990px){
+    .section-two{
+        flex-direction: row;    
+    }
+  }

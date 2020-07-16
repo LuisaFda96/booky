@@ -49,8 +49,10 @@ function Home() {
           <Books data={b}></Books>
         </div>
       </div>
+      <div>
       <Section1/>
       <Section2/>
+      </div>
       <div className="container pt-3">
         <Section />
       </div>
