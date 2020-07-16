@@ -6,7 +6,7 @@ import "../../styles/books.scss";
 import { Link } from 'react-router-dom';
 
 const Books = ({data}) => {
-// console.log()
+
 
   return (
     <div>      
